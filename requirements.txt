@@ -6,3 +6,4 @@ joblib
 PyPDF2
 google-generativeai
 reportlab
+pdfplumber
