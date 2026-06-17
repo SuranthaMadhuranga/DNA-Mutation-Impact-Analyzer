@@ -1,0 +1,353 @@
+/* ==========================================
+   APP BACKGROUND
+========================================== */
+
+.stApp {
+    background:
+        radial-gradient(circle at top left, #0ea5e9 0%, transparent 25%),
+        radial-gradient(circle at top right, #6366f1 0%, transparent 25%),
+        linear-gradient(135deg, #020617 0%, #071126 50%, #020617 100%);
+}
+
+/* ==========================================
+   REMOVE STREAMLIT DEFAULT STUFF
+========================================== */
+
+#MainMenu,
+footer,
+header {
+    visibility: hidden;
+}
+
+/* ==========================================
+   MAIN CONTAINERS
+========================================== */
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+}
+
+/* ==========================================
+   FILE UPLOADER
+========================================== */
+
+[data-testid="stFileUploader"] {
+    background: rgba(15, 23, 42, 0.85);
+    border: 2px dashed #38bdf8;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(56,189,248,0.20);
+    transition: all 0.3s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #22d3ee;
+    box-shadow: 0 0 35px rgba(34,211,238,0.4);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.stButton > button {
+    width: 100%;
+    height: 58px;
+    border-radius: 14px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #06b6d4
+    );
+    box-shadow: 0 8px 25px rgba(37,99,235,0.35);
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(56,189,248,0.6);
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #22d3ee
+    );
+}
+
+/* ==========================================
+   DOWNLOAD BUTTON
+========================================== */
+
+[data-testid="baseButton-secondary"] {
+    background: linear-gradient(
+        90deg,
+        #0f766e,
+        #14b8a6
+    ) !important;
+
+    color: white !important;
+
+    border: none !important;
+
+    border-radius: 14px !important;
+
+    font-weight: 700 !important;
+
+    transition: all 0.3s ease !important;
+}
+
+[data-testid="baseButton-secondary"]:hover {
+    box-shadow: 0 0 20px rgba(20,184,166,0.5);
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   INFO / SUCCESS / ERROR BOXES
+========================================== */
+
+.stAlert {
+    border-radius: 18px !important;
+    border: none !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+/* ==========================================
+   METRIC CARDS
+========================================== */
+
+[data-testid="metric-container"] {
+    background: linear-gradient(
+        145deg,
+        rgba(15,23,42,0.98),
+        rgba(30,41,59,0.98)
+    ) !important;
+
+    border: 1px solid rgba(56,189,248,0.20);
+
+    border-radius: 22px !important;
+
+    padding: 25px !important;
+
+    min-height: 150px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35);
+
+    transition: all 0.3s ease;
+}
+
+[data-testid="metric-container"]:hover {
+    transform: translateY(-6px);
+
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 0 30px rgba(56,189,248,0.35);
+}
+
+[data-testid="metric-container"] label {
+    color: #94a3b8 !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+    color: white !important;
+    font-size: 42px !important;
+    font-weight: 800 !important;
+}
+
+
+/* ==========================================
+   MUTATION INFO BOX
+========================================== */
+
+[data-testid="stAlert"] {
+    border-radius: 18px !important;
+
+    border: 1px solid rgba(56,189,248,0.35) !important;
+
+    box-shadow:
+        0 0 20px rgba(56,189,248,0.15);
+
+    backdrop-filter: blur(12px);
+
+    transition: all 0.3s ease;
+}
+
+[data-testid="stAlert"]:hover {
+    border-color: #38bdf8 !important;
+
+    box-shadow:
+        0 0 35px rgba(56,189,248,0.35);
+}
+
+/* ==========================================
+   PROGRESS BAR
+========================================== */
+
+.stProgress > div > div > div > div {
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #06b6d4
+    );
+
+    border-radius: 10px;
+}
+
+/* ==========================================
+   TEXT INPUTS
+========================================== */
+
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea,
+.stSelectbox {
+    border-radius: 12px !important;
+
+    border: 1px solid #334155 !important;
+
+    background: #0f172a !important;
+
+    color: white !important;
+}
+
+/* ==========================================
+   EXPANDERS
+========================================== */
+
+.streamlit-expanderHeader {
+    background: #0f172a;
+    border-radius: 12px;
+    color: white;
+}
+
+/* ==========================================
+   CUSTOM CARDS
+========================================== */
+
+.summary-card {
+    background: linear-gradient(
+        145deg,
+        rgba(15,23,42,0.95),
+        rgba(30,41,59,0.95)
+    );
+
+    border: 1px solid #334155;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+
+    transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #38bdf8;
+
+    box-shadow: 0 0 25px rgba(56,189,248,0.25);
+}
+
+/* ==========================================
+   LABELS
+========================================== */
+
+.label {
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ==========================================
+   VALUES
+========================================== */
+
+.value {
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+
+    text-shadow: 0 0 15px rgba(56,189,248,0.25);
+}
+
+/* ==========================================
+   AI EXPLANATION CARD
+========================================== */
+
+.explanation-card {
+    background: linear-gradient(
+        145deg,
+        rgba(15,23,42,0.95),
+        rgba(30,41,59,0.95)
+    );
+
+    border: 1px solid #475569;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    margin-top: 15px;
+
+    color: #e2e8f0;
+
+    line-height: 1.9;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+/* ==========================================
+   RISK LEVEL CARD
+========================================== */
+
+.risk-card {
+    background: linear-gradient(
+        145deg,
+        rgba(30,41,59,0.95),
+        rgba(15,23,42,0.95)
+    );
+
+    border: 1px solid #475569;
+
+    border-radius: 16px;
+
+    padding: 16px;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+}
